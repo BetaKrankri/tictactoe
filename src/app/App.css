@@ -1,0 +1,21 @@
+.App {
+  height: 100vh;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#game-name {
+  align-self: flex-start;
+}
+
+#game-name>span {
+  color: hsl(200, 100%, 90%);
+  font-style: italic;
+  font-size: 2.4rem;
+}
+
