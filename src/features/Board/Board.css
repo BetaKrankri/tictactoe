@@ -1,0 +1,5 @@
+.GameBoard {
+    border: solid 1px hsl(240, 100%, 100%);
+    min-height: 20px; 
+    min-width: 20px;
+}
