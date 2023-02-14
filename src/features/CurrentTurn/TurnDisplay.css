@@ -1,4 +1,4 @@
-.Turn {
+.TurnDisplay {
     min-height: 20px;
     min-width: 20px;
     box-sizing: border-box;
@@ -16,12 +16,12 @@
     background-color: hsl(266, 100%, 50%);
 }
 
-.Turn:hover {
+.TurnDisplay:hover {
     border-color: white;
     border-radius: 8px;
     cursor: pointer;
 } 
 
-.Turn:active {
+.TurnDisplay:active {
     background-color: white;
 } 

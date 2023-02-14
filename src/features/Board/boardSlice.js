@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const boardSlice = createSlice({
     name: 'board',
-    initialState: ['', '', '', '', '', '', '', '', ''],
+    initialState: ['cross', '', '', '', '', '', '', '', 'circle'],
     reducers: {
         clearBoard(state, action) {
             
