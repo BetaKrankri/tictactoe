@@ -10,8 +10,11 @@ const turnSlice = createSlice({
     }
 });
 
+
+const selectTurn = state => state.turn;
 const selectIsCrossTurn = (state) => state.turn === 'cross';
 const selectIsCircleTurn = (state) => state.turn !== 'cross';
 
-export default turnSlice.reducer;
-export { selectIsCircleTurn, selectIsCrossTurn };
+export default turnSlice.reducer; //reducer
+export { selectIsCircleTurn, selectIsCrossTurn, selectTurn }; //selectors
+export const { toggleTurn } = turnSlice.actions; //actions
