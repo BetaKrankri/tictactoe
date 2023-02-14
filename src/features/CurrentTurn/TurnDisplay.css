@@ -18,14 +18,14 @@
     background-color: hsl(266, 100%, 50%);
 }
 
-.TurnDisplay:hover {
+/* .TurnDisplay:hover {
     min-height: 32px;
     min-width: 32px;
     border-color: white;
     border-radius: 10px;
-    /* cursor: pointer; */
+    /*cursor: pointer;*//*
 } 
 
 .TurnDisplay:active {
     background-color: white;
-} 
+}  */
