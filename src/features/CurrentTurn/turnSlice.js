@@ -15,6 +15,10 @@ const currentTurnSlice = createSlice({
         },
         resetTurn(state) {
             return '';
+        },
+        randomTurn(state){
+            let newState = flipCoin();
+            return newState;
         }
     }
 })
@@ -26,5 +30,5 @@ function flipCoin() {
 export const selectCurrentTurn = state => state.currentTurn;
 export const selectIsCrossTurn = state => state.currentTurn === 'cross'
 
-export const { toggleCurrentTurn, resetTurn } = currentTurnSlice.actions
+export const { toggleCurrentTurn, resetTurn, randomTurn } = currentTurnSlice.actions
 export default currentTurnSlice.reducer;

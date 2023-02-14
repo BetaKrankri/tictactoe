@@ -3,7 +3,7 @@ import './App.css';
 
 import Board from '../features/Board/Board.js';
 import TurnDisplay from '../features/CurrentTurn/TurnDisplay.js';
-import Restart from '../features/components/Restart.js'
+import Restart from '../features/components/Restart/Restart.js'
 
 function App() {
   return (

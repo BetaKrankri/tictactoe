@@ -20,3 +20,10 @@
   font-size: 2.4rem;
 }
 
+.GameControls {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+}

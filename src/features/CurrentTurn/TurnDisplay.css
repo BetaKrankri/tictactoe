@@ -1,6 +1,6 @@
 .TurnDisplay {
-    min-height: 20px;
-    min-width: 20px;
+    min-height: 30px;
+    min-width: 30px;
     box-sizing: border-box;
     margin: 20px;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
@@ -19,9 +19,11 @@
 }
 
 .TurnDisplay:hover {
+    min-height: 32px;
+    min-width: 32px;
     border-color: white;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 10px;
+    /* cursor: pointer; */
 } 
 
 .TurnDisplay:active {
