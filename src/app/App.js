@@ -3,15 +3,20 @@ import './App.css';
 
 import Board from '../features/Board/Board.js';
 import TurnDisplay from '../features/CurrentTurn/TurnDisplay.js';
+import Restart from '../features/components/Restart.js'
 
 function App() {
   return (
     <div className="App">
       <h1 id='game-name'><span>T</span>ic<span>t</span>ac<span>t</span>oe</h1>
-      <TurnDisplay />
+      <div className='GameControls'>
+        <TurnDisplay />
+        <Restart />
+      </div>
+
       <Board />
     </div>
   );
 }
-
 export default App;
+

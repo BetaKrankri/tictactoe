@@ -2,16 +2,29 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const currentTurnSlice = createSlice({
     name: 'currentTurn',
-    initialState: 'cross',
+    initialState: '',
     reducers: {
         toggleCurrentTurn(state) {
-            let newS = state === 'cross' ? 'circle' : 'cross';
+            let newS;
+            if (!state) {
+                newS = flipCoin()
+            } else {
+                newS = state === 'cross' ? 'circle' : 'cross'
+            }
             return newS;
+        },
+        resetTurn(state) {
+            return '';
         }
     }
 })
 
-export const selectCurrentTurn = state => state.currentTurn;
+function flipCoin() {
+    return (Math.round(Math.random()) > 0.5) ? 'cross' : 'circle';
+};
 
-export const { toggleCurrentTurn } = currentTurnSlice.actions
+export const selectCurrentTurn = state => state.currentTurn;
+export const selectIsCrossTurn = state => state.currentTurn === 'cross'
+
+export const { toggleCurrentTurn, resetTurn } = currentTurnSlice.actions
 export default currentTurnSlice.reducer;

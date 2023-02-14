@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 20px;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    border: solid 4px hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 30%);
 }
 
 .circle {
