@@ -1,31 +1,26 @@
+// Estilos
 import './Board.css';
+// Redux
+import { useSelector } from 'react-redux';
+// Slices
+import { selectBoard } from './boardSlice';
+// Components
+import Tile from './Tile/Tile.js';
 
 function Board(props) {
+    const board = useSelector(selectBoard);
 
-    function Tile() {
-        return (
-            <div className='Tile'>
-                x
-            </div>
-        );
+    const renderTiles = () => {
+        return board.map(ownership => <Tile ownBy={ownership} />)
     }
 
-
-
-
-    return ( 
-        <div  className='GameBoard'>
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
-            <Tile />
+    return (
+        <div className='GameBoard'>
+            {renderTiles()}
         </div>
-     );
-    }
+    );
+}
+
+
 
 export default Board;
