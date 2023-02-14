@@ -1,12 +1,31 @@
 import './Board.css';
 
-function GameBoard(props) {
+function Board(props) {
+
+    function Tile() {
+        return (
+            <div className='Tile'>
+                x
+            </div>
+        );
+    }
+
+
+
+
     return ( 
         <div  className='GameBoard'>
-            
-
+            <Tile />
+            <Tile />
+            <Tile />
+            <Tile />
+            <Tile />
+            <Tile />
+            <Tile />
+            <Tile />
+            <Tile />
         </div>
      );
-}
+    }
 
-export default GameBoard;
+export default Board;
