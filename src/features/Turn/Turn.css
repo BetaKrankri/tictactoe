@@ -1,0 +1,27 @@
+.Turn {
+    min-height: 20px;
+    min-width: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+.circle {
+    border: solid 4px hsl(30, 100%, 80%);
+    background-color: hsl(30, 100%, 50%);
+}
+
+.cross {
+    border: solid 4px hsl(266, 100%, 80%);
+    background-color: hsl(266, 100%, 50%);
+}
+
+.Turn:hover {
+    border-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+} 
+
+.Turn:active {
+    background-color: white;
+} 

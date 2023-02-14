@@ -2,11 +2,11 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const boardSlice = createSlice({
     name: 'board',
-    initialState: ['cross', 'circle', '', '', 'cross', '', '', 'circle', 'cross'],
+    initialState: ['', '', '', '', '', '', '', '', ''],
     reducers: {
-        flipATile(state, action) {
-            return
-        },
+        clearBoard(state, action) {
+            
+        }
     }
 });
 
@@ -42,5 +42,5 @@ const selectCrossTilesIDs =
 
 export default boardSlice.reducer;
 export { selectBoard, selectCircleTilesIDs, selectCrossTilesIDs };
-export const { } = boardSlice.actions;
+export const { clearBoard } = boardSlice.actions;
 

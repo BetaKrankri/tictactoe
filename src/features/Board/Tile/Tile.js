@@ -2,20 +2,15 @@ import './Tile.css';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-
-import { selectTurn, toggleTurn } from '../../Turn/turnSlice.js'
-
-function Tile({ ownBy, onClick }) {
+function Tile({ ownBy, tilePos }) {
     const dispatch = useDispatch();
-    const turn = useSelector(selectTurn);
 
     const handleClick = (e) => {
-        dispatch(toggleTurn());
     }
 
     return (
         <div className={`Tile ${ownBy}`} onClick={handleClick}>
-            
+            {ownBy}
         </div>
     );
 }
