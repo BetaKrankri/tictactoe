@@ -13,7 +13,6 @@ function App() {
         <TurnDisplay />
         <Restart />
       </div>
-
       <Board />
     </div>
   );

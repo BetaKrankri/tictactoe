@@ -11,7 +11,7 @@ function TurnDisplay(props) {
         dispatch(toggleCurrentTurn());
     }
 
-    return (<div className={`TurnDisplay ${currentTurn}`} onClick={'handleClick'}></div>);
+    return (<div className={`TurnDisplay ${currentTurn}`} onClick={() => {}}></div>);
 }
 
 export default TurnDisplay;

@@ -11,8 +11,8 @@ function Board(props) {
     const board = useSelector(selectBoard);
 
     const renderTiles = () => {
-        return board.map((ownership, ind) =>
-            <Tile ownBy={ownership} key={ind} tilePos={ind} />)
+        return board.map((ownership, index) =>
+            <Tile ownBy={ownership} key={index} tilePos={index} />)
     }
 
     return (

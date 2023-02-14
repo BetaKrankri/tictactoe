@@ -22,7 +22,7 @@ function Restart() {
         <div
             className='Restart '
             onClick={handleClick}>
-            {!currentTurn && 'SET TURN'}
+            {!currentTurn && 'START'}
             {currentTurn && 'RESET'}
         </div>
     );
