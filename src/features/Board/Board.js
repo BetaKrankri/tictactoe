@@ -8,7 +8,6 @@ import { selectBoard, selectCircleTilesIDs, selectCrossTilesIDs } from './boardS
 import { selectWinner, setWinner, WINNER_COMBO } from '../Winner/winnerSlice';
 // Components
 import Tile from './Tile/Tile.js';
-import { selectCurrentTurn } from '../CurrentTurn/turnSlice';
 
 
 function Board(props) {
@@ -18,7 +17,6 @@ function Board(props) {
     const winner = useSelector(selectWinner);
     const crossTilesIDs = useSelector(selectCrossTilesIDs);
     const circleTilesIDs = useSelector(selectCircleTilesIDs);
-    const currentTurn = useSelector(selectCurrentTurn);
 
     function isWinnerMove(playerPositions) {
         return WINNER_COMBO.some(combo => combo.every(tilePos => playerPositions.includes(tilePos)))
