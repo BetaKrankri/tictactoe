@@ -3,7 +3,7 @@ import './TurnDisplay.css';
 import { useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { selectCurrentTurn, toggleCurrentTurn, setTurn } from './turnSlice.js'
+import { selectCurrentTurn, setTurn } from './turnSlice.js'
 import { selectWinner } from '../Winner/winnerSlice';
 
 function TurnDisplay(props) {
@@ -11,20 +11,20 @@ function TurnDisplay(props) {
     const currentTurn = useSelector(selectCurrentTurn);
     const winner = useSelector(selectWinner);
 
-    function handleClick(e) {
-        dispatch(toggleCurrentTurn());
-    }
+    // function handleClick(e) {
+    //     dispatch(toggleCurrentTurn());
+    // }
 
     useEffect(() => {
         if (!winner) return;
         dispatch(setTurn(winner));
-    }, [winner])
+    }, [winner, dispatch])
 
     let hasWin = winner !== '';
 
     return (
         <div className={`TurnDisplay ${currentTurn}`} data-haswin={hasWin}
-                onClick={() => { }}
+                // onClick={() => { }}
         >
 
         </div>
