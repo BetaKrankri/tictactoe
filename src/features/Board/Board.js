@@ -26,13 +26,13 @@ function Board(props) {
         if(isWinnerMove(crossTilesIDs)){
             dispatch(setWinner('cross'))
         }
-    }, [crossTilesIDs]);
+    }, [crossTilesIDs, dispatch]);
 
     useEffect(() => {
         if(isWinnerMove(circleTilesIDs)){
             dispatch(setWinner('circle'))
         }
-    }, [circleTilesIDs]);
+    }, [circleTilesIDs, dispatch]);
 
 
 
