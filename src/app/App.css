@@ -21,11 +21,14 @@
 }
 
 .Display {
+  box-sizing: border-box;
+  
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   gap: 30px;
 
+  margin-bottom: 20px;
   width: 300px;
 }

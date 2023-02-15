@@ -1,19 +1,24 @@
 .TurnDisplay {
-    min-height: 30px;
-    min-width: 30px;
+    height: 11px;
+    width: 100px;
     box-sizing: border-box;
-    margin: 20px;
+    background-color: hsl(0, 0%, 50%);
+    border: solid 2px hsl(0, 0%, 90%);
+    border-radius: 10px;
+
     transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
-    border: solid 4px hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 30%);
 }
 
-.circle {
+.TurnDisplay.circle {
+    height: 12px;
+    width: 60px;
     border: solid 4px hsl(30, 100%, 80%);
     background-color: hsl(30, 100%, 50%);
 }
 
-.cross {
+.TurnDisplay.cross {
+    height: 12px;
+    width: 60px;
     border: solid 4px hsl(266, 100%, 80%);
     background-color: hsl(266, 100%, 50%);
 }
