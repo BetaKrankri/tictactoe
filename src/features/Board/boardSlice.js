@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+
 const initialState = new Array(9).fill('');
 
 const boardSlice = createSlice({
@@ -12,7 +13,7 @@ const boardSlice = createSlice({
         },
         markTile(state, action) {
             let currentTileOwner = state[action.payload.tilePos]
-            if(!currentTileOwner) {
+            if (!currentTileOwner) {
                 state[action.payload.tilePos] = action.payload.currentTurn
             }
             return state;
@@ -26,32 +27,30 @@ const boardSlice = createSlice({
 const selectBoard = (state) => state.board;
 
 // Regresa una lista de TilesIDs que pertenecen a 'circle'
-const selectCircleTilesIDs =
-    (state) => {
-        let circleTilesIDs = [];
-        state.board.forEach(
-            (tileOwn, index) => {
-                if (tileOwn === 'circle') {
-                    circleTilesIDs.push(index);
-                }
-            })
-        return circleTilesIDs;
-    };
+const selectCircleTilesIDs = (state) => {
+    let circleTilesIDs = [];
+    state.board.forEach(
+        (tileOwn, index) => {
+            if (tileOwn === 'circle') {
+                circleTilesIDs.push(index);
+            }
+        })
+    return circleTilesIDs;
+};
 
 // Regresa una lista de TilesIDs que pertenecen a 'cross'
-const selectCrossTilesIDs =
-    (state) => {
-        let circleTilesIDs = [];
-        state.board.forEach(
-            (tileOwn, index) => {
-                if (tileOwn === 'cross') {
-                    circleTilesIDs.push(index);
-                }
-            })
-        return circleTilesIDs;
-    };
+const selectCrossTilesIDs = (state) => {
+    let circleTilesIDs = [];
+    state.board.forEach(
+        (tileOwn, index) => {
+            if (tileOwn === 'cross') {
+                circleTilesIDs.push(index);
+            }
+        })
+    return circleTilesIDs;
+};
 
 export default boardSlice.reducer;
-export { selectBoard, selectCircleTilesIDs, selectCrossTilesIDs };
+export { selectBoard, selectCrossTilesIDs, selectCircleTilesIDs };
 export const { clearBoard, markTile } = boardSlice.actions;
 
