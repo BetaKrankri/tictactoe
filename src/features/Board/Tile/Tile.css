@@ -1,4 +1,3 @@
-
 .Tile {
     box-sizing: border-box;
     background-color: hsl(240, 26%, 13%);
@@ -17,13 +16,21 @@
     box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.1) inset;
 }
 
-.circle {
+.Tile.circle {
     border: solid 4px hsl(30, 100%, 80%);
     background-color: hsl(30, 100%, 50%);
+    background-image: url(orange.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 
-.cross {
+.Tile.cross {
     border: solid 4px hsl(266, 100%, 80%);
     background-color: hsl(266, 100%, 50%);
+    background-image: url(grape.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }

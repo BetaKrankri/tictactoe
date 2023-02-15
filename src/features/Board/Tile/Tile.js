@@ -1,4 +1,6 @@
 import './Tile.css';
+import './grape.svg';
+import './orange.svg';
 
 import { useDispatch, useSelector, } from 'react-redux';
 import { selectCurrentTurn, toggleCurrentTurn } from '../../CurrentTurn/turnSlice';
@@ -25,7 +27,7 @@ function Tile({ ownBy, tilePos }) {
 
     return (
         <div className={`Tile ${ownBy}`} onClick={handleClick}>
-            {ownBy}
+
         </div>
     );
 }
