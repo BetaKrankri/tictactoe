@@ -2,8 +2,9 @@ import './Restart.css';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { resetTurn, selectCurrentTurn, randomTurn } from '../../CurrentTurn/turnSlice';
-import { clearBoard } from '../../Board/boardSlice';
+import { resetTurn, selectCurrentTurn, randomTurn } from '../CurrentTurn/turnSlice';
+import { clearBoard } from '../Board/boardSlice';
+import { clearWinner } from '../Winner/winnerSlice';
 
 function Restart() {
     const dispatch = useDispatch();
@@ -14,7 +15,8 @@ function Restart() {
             dispatch(randomTurn());
         } else {
             dispatch(resetTurn());
-            dispatch(clearBoard())
+            dispatch(clearBoard());
+            dispatch(clearWinner())
         }
     }
 
@@ -23,7 +25,7 @@ function Restart() {
             className='Restart '
             onClick={handleClick}>
             {!currentTurn && 'START'}
-            {currentTurn && 'RESET'}
+            {currentTurn && 'RESTART'}
         </div>
     );
 }

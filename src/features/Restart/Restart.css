@@ -1,0 +1,21 @@
+.Restart {
+    box-sizing: border-box;
+    min-height: 30px;
+    min-width: 30px;
+    margin-top: 30px;
+    
+
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(266, 70%, 70%);
+    
+    transition: all ease-in-out .3s;
+}
+
+.Restart:hover {
+    font-size: 1.5rem;
+    color: hsl(30, 70%, 50%);
+    
+}
+

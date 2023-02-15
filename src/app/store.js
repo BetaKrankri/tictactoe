@@ -4,11 +4,13 @@ import { configureStore } from '@reduxjs/toolkit';
 // ******************
 import boardReducer from '../features/Board/boardSlice.js';
 import currentTurnReducer from '../features/CurrentTurn/turnSlice';
+import winnerReducer from '../features/Winner/winnerSlice.js';
 // Store creation
 // *******************
 export const store = configureStore({
   reducer: {
     board: boardReducer,
-    currentTurn: currentTurnReducer
+    currentTurn: currentTurnReducer,
+    winner: winnerReducer
   }
 });
