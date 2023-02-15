@@ -8,14 +8,14 @@
 
     font-size: 1.5rem;
     font-weight: 600;
-    color: hsl(266, 70%, 70%);
     
+    color: hsl(30, 70%, 50%);
     transition: all ease-in-out .3s;
 }
 
 .Restart:hover {
     font-size: 1.5rem;
-    color: hsl(30, 70%, 50%);
+    color: hsl(266, 70%, 70%);
     
 }
 
