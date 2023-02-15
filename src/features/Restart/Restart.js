@@ -2,7 +2,7 @@ import './Restart.css';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { resetTurn, selectCurrentTurn, randomTurn } from '../CurrentTurn/turnSlice';
+import { selectCurrentTurn, randomTurn } from '../CurrentTurn/turnSlice';
 import { clearBoard } from '../Board/boardSlice';
 import { clearWinner } from '../Winner/winnerSlice';
 
