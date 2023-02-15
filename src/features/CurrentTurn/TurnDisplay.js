@@ -16,15 +16,17 @@ function TurnDisplay(props) {
     }
 
     useEffect(() => {
+        if (!winner) return;
         dispatch(setTurn(winner));
-    },[winner])
+    }, [winner])
+
+    let hasWin = winner !== '';
 
     return (
-        <div
-            className={`TurnDisplay ${currentTurn}`}
-            onClick={() => { }}
+        <div className={`TurnDisplay ${currentTurn}`} data-haswin={hasWin}
+                onClick={() => { }}
         >
-            
+
         </div>
     );
 }

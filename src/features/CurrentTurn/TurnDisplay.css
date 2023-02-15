@@ -23,6 +23,10 @@
     background-color: hsl(266, 100%, 50%);
 }
 
+.TurnDisplay[data-haswin=true] {
+    width: 100px;
+}
+
 /* .TurnDisplay:hover {
     min-height: 32px;
     min-width: 32px;
