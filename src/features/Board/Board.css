@@ -13,4 +13,18 @@
 
     min-height: 20px;
     min-width: 20px;
+
+    padding: 10px;
+    border: solid 4px hsl(0, 0%, 80%);
+    
+}
+
+.GameBoard[data-winner='circle'] {
+    border: solid 4px hsl(30, 100%, 80%);
+    background-color: hsl(30, 100%, 30%);
+}
+
+.GameBoard[data-winner='cross'] {
+    border: solid 4px hsl(266, 100%, 80%);
+    background-color: hsl(266, 100%, 30%);
 }

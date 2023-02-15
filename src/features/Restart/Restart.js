@@ -11,13 +11,9 @@ function Restart() {
     const currentTurn = useSelector(selectCurrentTurn);
 
     function handleClick(e) {
-        if (!currentTurn) {
-            dispatch(randomTurn());
-        } else {
-            dispatch(resetTurn());
             dispatch(clearBoard());
             dispatch(clearWinner())
-        }
+            dispatch(randomTurn());
     }
 
     return (
