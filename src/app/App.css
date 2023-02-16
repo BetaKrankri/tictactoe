@@ -9,9 +9,14 @@
   align-items: center;
 }
 
-#game-name {
+#title {
   position: absolute;
   top: 0;
+  text-align: right;
+}
+
+#game-name {
+  margin: 0;
 }
 
 #game-name>span {
@@ -20,9 +25,13 @@
   font-size: 2.4rem;
 }
 
+#byLabel {
+  color: white;
+}
+
 .Display {
   box-sizing: border-box;
-  
+
   display: flex;
   justify-content: center;
   align-content: center;

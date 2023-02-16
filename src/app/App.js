@@ -8,7 +8,12 @@ import Restart from '../features/Restart/Restart.js'
 function App() {
   return (
     <div className="App">
-      <h1 id='game-name'><span>T</span>ic<span>t</span>ac<span>t</span>oe</h1>
+      <div id='title'>
+        <h1 id='game-name'><span>T</span>ic<span>t</span>ac<span>t</span>oe</h1>
+        <span id='byLabel'>by BetaKrankri</span>
+
+      </div>
+
       <div className='Display'>
         <TurnDisplay />
       </div>
