@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div id='title'>
         <h1 id='game-name'><span>T</span>ic<span>t</span>ac<span>t</span>oe</h1>
-        <span id='byLabel'>by BetaKrankri</span>
+        <span id='byLabel'>by <a href='https://github.com/BetaKrankri'>BetaKrankri</a></span>
 
       </div>
 
